@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+artifacts/
+*.log
+.DS_Store
+Thumbs.db
+coverage/
+# Original recording; optimized README media lives in docs/media/.
+/jev-tetris-demo.mp4

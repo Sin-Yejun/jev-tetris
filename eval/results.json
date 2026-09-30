@@ -1,0 +1,405 @@
+{
+  "recordedAt": "2026-09-30T03:24:14.146Z",
+  "summary": {
+    "baseline": {
+      "cases": 12,
+      "avoidableHoleChoices": 1,
+      "totalResultingHoles": 8,
+      "immediateClears": 9,
+      "meanLatencyMs": 267
+    },
+    "revised": {
+      "cases": 12,
+      "avoidableHoleChoices": 0,
+      "totalResultingHoles": 3,
+      "immediateClears": 9,
+      "meanLatencyMs": 243
+    }
+  },
+  "results": [
+    {
+      "case": "empty-T",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 416,
+      "usage": {
+        "input_tokens": 4207,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "empty-T",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 286,
+      "usage": {
+        "input_tokens": 5273,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "empty-Z",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 1,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 305,
+      "usage": {
+        "input_tokens": 2456,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "empty-Z",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 1,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 206,
+      "usage": {
+        "input_tokens": 2957,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "empty-S",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x7",
+      "holesBefore": 0,
+      "holesAfter": 1,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 306,
+      "usage": {
+        "input_tokens": 2456,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "empty-S",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r0x7",
+      "holesBefore": 0,
+      "holesAfter": 1,
+      "cleared": 0,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 232,
+      "usage": {
+        "input_tokens": 2957,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "steps-L",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x6",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 198,
+      "usage": {
+        "input_tokens": 4254,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "steps-L",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x0",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 5,
+      "avoidable": false,
+      "latencyMs": 284,
+      "usage": {
+        "input_tokens": 5299,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "steps-J",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 309,
+      "usage": {
+        "input_tokens": 4254,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "steps-J",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 304,
+      "usage": {
+        "input_tokens": 5299,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "well-I",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r1x9",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 4,
+      "maxHeight": 0,
+      "avoidable": false,
+      "latencyMs": 310,
+      "usage": {
+        "input_tokens": 2485,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "well-I",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x9",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 4,
+      "maxHeight": 0,
+      "avoidable": false,
+      "latencyMs": 187,
+      "usage": {
+        "input_tokens": 2854,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "valley-O",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x8",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 1,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 218,
+      "usage": {
+        "input_tokens": 1654,
+        "output_tokens": 110
+      }
+    },
+    {
+      "case": "valley-O",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r0x8",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 1,
+      "maxHeight": 2,
+      "avoidable": false,
+      "latencyMs": 190,
+      "usage": {
+        "input_tokens": 1817,
+        "output_tokens": 110
+      }
+    },
+    {
+      "case": "rough-T",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r1x3",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 4,
+      "avoidable": false,
+      "latencyMs": 220,
+      "usage": {
+        "input_tokens": 4282,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "rough-T",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x3",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 4,
+      "avoidable": false,
+      "latencyMs": 303,
+      "usage": {
+        "input_tokens": 5374,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "high-I",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r1x9",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 4,
+      "maxHeight": 11,
+      "avoidable": false,
+      "latencyMs": 306,
+      "usage": {
+        "input_tokens": 2689,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "high-I",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x9",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 4,
+      "maxHeight": 11,
+      "avoidable": false,
+      "latencyMs": 206,
+      "usage": {
+        "input_tokens": 2882,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "rough-S",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x7",
+      "holesBefore": 0,
+      "holesAfter": 2,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 202,
+      "usage": {
+        "input_tokens": 2491,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "rough-S",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x1",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 4,
+      "avoidable": false,
+      "latencyMs": 213,
+      "usage": {
+        "input_tokens": 2967,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "rough-Z",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r0x0",
+      "holesBefore": 0,
+      "holesAfter": 2,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 202,
+      "usage": {
+        "input_tokens": 2491,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "rough-Z",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r1x4",
+      "holesBefore": 0,
+      "holesAfter": 0,
+      "cleared": 0,
+      "maxHeight": 5,
+      "avoidable": false,
+      "latencyMs": 205,
+      "usage": {
+        "input_tokens": 2967,
+        "output_tokens": 190
+      }
+    },
+    {
+      "case": "buried-L",
+      "version": "baseline",
+      "model": "jev-1.13.0",
+      "choice": "r2x0",
+      "holesBefore": 1,
+      "holesAfter": 2,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": true,
+      "latencyMs": 215,
+      "usage": {
+        "input_tokens": 4267,
+        "output_tokens": 360
+      }
+    },
+    {
+      "case": "buried-L",
+      "version": "revised",
+      "model": "jev-1.13.0",
+      "choice": "r2x6",
+      "holesBefore": 1,
+      "holesAfter": 1,
+      "cleared": 0,
+      "maxHeight": 3,
+      "avoidable": false,
+      "latencyMs": 294,
+      "usage": {
+        "input_tokens": 5388,
+        "output_tokens": 360
+      }
+    }
+  ]
+}
