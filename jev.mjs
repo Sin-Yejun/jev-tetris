@@ -9,7 +9,9 @@ export function buildRequest(state, options, model) {
   return {
     model,
     state: {
-      game: 'Tetris on a 10-column, 20-row board with continuous gravity, including while this request is pending. Options are reachable by moving and rotating at the current height then falling vertically. No hold or wall kicks. Full rows disappear. A late choice may become unreachable before execution.',
+      game: state.pace === 'response'
+        ? 'Tetris on a 10-column, 20-row board. The board waits for this decision, then immediately executes the selected vertical-drop placement. No hold or wall kicks. Full rows disappear.'
+        : 'Tetris on a 10-column, 20-row board with continuous gravity, including while this request is pending. Options are reachable by moving and rotating at the current height then falling vertically. No hold or wall kicks. Full rows disappear. A late choice may become unreachable before execution.',
       active_piece: state.active ?? spawn(state.piece),
       current_piece: state.piece,
       board_condition: `The current board contains ${before.holes} buried empty cells. Its tallest column is ${before.maxHeight} rows high.`,

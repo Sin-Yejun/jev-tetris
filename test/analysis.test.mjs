@@ -5,7 +5,14 @@ import { distribution, percent, duration, estimateCost, dollars } from '../publi
 test('cost charges only known-model input tokens and preserves tiny amounts until display', () => {
   assert.equal(estimateCost('jev-1.13.0', { input_tokens: 1_000_000, output_tokens: 500 }), .042);
   assert.equal(estimateCost('jev-1.13.0', { input_tokens: 0 }), 0);
+  assert.equal(estimateCost('gpt-6-luna', { input_tokens: 1_000_000, output_tokens: 900 }), .10);
+  assert.ok(Math.abs(estimateCost('gpt-6-luna', { input_tokens: 3766, output_tokens: 0 }) - .0003766) < 1e-12);
+  assert.equal(estimateCost('gpt-6-luna', { input_tokens: 0 }), 0);
+  assert.equal(estimateCost('gpt-6-luna', { input_tokens: -1 }), null);
+  assert.equal(estimateCost('gpt-6-luna', { input_tokens: 1.5 }), null);
+  assert.equal(estimateCost('gpt-6-luna', {}), null);
   assert.equal(estimateCost('unknown', { input_tokens: 100 }), null);
+  assert.equal(estimateCost('toString', { input_tokens: 100 }), null);
   assert.equal(estimateCost('jev-1.13.0', {}), null);
   assert.equal(estimateCost('jev-1.13.0', { input_tokens: -1 }), null);
   const small = estimateCost('jev-1.13.0', { input_tokens: 1000 });

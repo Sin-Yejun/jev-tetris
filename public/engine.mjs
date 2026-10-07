@@ -93,6 +93,7 @@ export function validateState(value) {
     value.board.every(row => Array.isArray(row) && row.length === WIDTH && row.every(v => v === 0 || (typeof v === 'string' && Object.hasOwn(SHAPES, v)))) &&
     typeof value.piece === 'string' && Object.hasOwn(SHAPES, value.piece) &&
     Array.isArray(value.next) && value.next.length <= 5 && value.next.every(p => typeof p === 'string' && Object.hasOwn(SHAPES, p)) &&
+    (value.pace == null || ['response', 'gravity'].includes(value.pace)) &&
     (value.active == null || (Number.isInteger(value.active.x) && value.active.x >= 0 && value.active.x < WIDTH &&
       Number.isInteger(value.active.y) && value.active.y >= 0 && value.active.y < HEIGHT &&
       Number.isInteger(value.active.rotation) && value.active.rotation >= 0 && value.active.rotation < rotations(value.piece).length &&
